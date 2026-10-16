@@ -440,6 +440,8 @@ void NNS_G3dFreeAnmObj(NNSFndAllocator *allocator, NNSG3dAnmObj *anmObj);
 void NNS_G3DAnimationCreate(NNSG3dAnmObj *anmObj, void *anm, const NNSG3dResMdl *mdl, const NNSG3dResTex *tex);
 void NNS_G3DAnimationBind(NNSG3dRenderObj *obj, NNSG3dAnmObj *anmObj);
 void NNS_G3dRenderObjRemoveAnmObj(NNSG3dRenderObj *obj, NNSG3dAnmObj *anmObj);
+// The draw NNS_G3DDraw runs: sbc.c has its call but not its definition yet, so it is declared here
+void NNS_G3DDrawCore(NNSG3dRenderObj *work, NNSG3dRenderObj *obj);
 void NNS_G3DDraw(NNSG3dRenderObj *obj);
 
 // What starts an animation of a kind of resource: its header, and the function that fills in the animation object
